@@ -1,0 +1,17 @@
+@import 'fonts.css';
+#header{
+  background-image: url(../img/header.png);
+  background-size:cover;
+  background-position: 0 100%;
+  padding: 180px 0;
+}
+#services {
+  background-color: lightcyan;
+}
+
+.card:hover {
+  background-color: aquamarine;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(184,184,184,1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(184,184,184,1);
+  box-shadow: 0px 10px 20px 0px rgba(184,184,184,1);
+}
