@@ -15,3 +15,27 @@
   -moz-box-shadow: 0px 10px 20px 0px rgba(184,184,184,1);
   box-shadow: 0px 10px 20px 0px rgba(184,184,184,1);
 }
+
+.text {
+  display: none;
+}
+
+div[filter]:hover img {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  transition: 0.5s;
+}
+
+div[filter]:hover .text {
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  text-align: center;
+  width: 100%;
+}
+
+.pricing-header {
+  background-image: url(img/pricing_bg.png);
+}

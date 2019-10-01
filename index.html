@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-secondary">
+  <body class="bg-white">
     <header id="navbar" class="bg-light">
       <div class="container">
         <div class="row">
@@ -168,104 +168,104 @@
       </div>
     </section>
     <section id="works" class="bg-white py-5">
-      <div class="container row mx-auto mt-7 text-center">
+      <div class="container mx-auto mt-7 text-center">
         <div class="row w-75 mx-auto my-5">
-          <div class="col">
+          <div class="col-12">
               <h3>Latest works</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium libero ipsam fugiat doloribus quibusdam beatae dolorum molestias veniam nulla.</p>
           </div>
         </div>
         <div class="row w-75 mt-5 mx-auto">
-          <div class="col">
-              <button type="button" class="btn btn-outline-info">ALL</button>
-              <button type="button" class="btn btn-outline-info">WEB-DESIGN</button>
-              <button type="button" class="btn btn-outline-info">UI/UX DESIGN</button>
-              <button type="button" class="btn btn-outline-info">MOCKUPS</button>
+          <div class="col-12">
+              <button type="button" class="btn btn-outline-info" filter="all">ALL</button>
+              <button type="button" class="btn btn-outline-info" filter="wd">WEB-DESIGN</button>
+              <button type="button" class="btn btn-outline-info" filter="ud">UI/UX DESIGN</button>
+              <button type="button" class="btn btn-outline-info" filter="mock">MOCKUPS</button>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-4">
-            <img class="mw-100" src="img/item1.png" alt="">
+        <div class="row mt-5 filter">
+          <div class="col-4 mb-2" filter="wd">
+            <img src="img/item1.png" alt="">
+            <div class="text">
+              <h5>Hand Watch</h5>
+              <p>Web design</p>
+            </div>
           </div>
-          <div class="col-4">
-            <img class="mw-100" src="img/item2.png" alt="">
+          <div class="col-4 mb-2" filter="mock">
+            <img src="img/item2.png" alt="">
+            <div class="text">
+              <h5>One Day Pass</h5>
+              <p>Mockups</p>
+            </div>
           </div>
-          <div class="col-4">
-            <img class="mw-100" src="img/item3.png" alt="">
+          <div class="col-4 mb-2" filter="wd">
+            <img src="img/item3.png" alt="">
+            <div class="text">
+              <h5>Modal T-shirt</h5>
+              <p>Web design</p>
+            </div>
           </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-4">
-            <img class="mw-100" src="img/item4.png" alt="">
-          </div>
-          <div class="col-4">
-            <img class="mw-100" src="img/item5.png" alt="">
-          </div>
-          <div class="col-4">
-            <img class="mw-100" src="img/item6.png" alt="">
-          </div>
-        </div>
-        <div class="row mx-auto mt-5">
-          <div class="col"><button type="button" class="btn btn-info">VIEW ALL</button></div>
+          <div class="col-4 mb-2" filter="mock">
+              <img src="img/item4.png" alt="">
+              <div class="text">
+                <h5>Flask</h5>
+                <p>Mockups</p>
+              </div>
+            </div>
+            <div class="col-4 mb-2" filter="ud">
+              <img src="img/item5.png" alt="">
+              <div class="text">
+                <h5>Eplemost</h5>
+                <p>Ui/Ux Design</p>
+              </div>
+            </div>
+            <div class="col-4 mb-2" filter="ud">
+              <img src="img/item6.png" alt="">
+              <div class="text">
+                <h5>The kitchens</h5>
+                <p>Ui/Ux Design</p>
+              </div>
+            </div>
         </div>
       </div>
-
+      <div class="container">
+          <div class="row text-center mt-4">
+              <div class="col-xl-12">
+                <button type="button" class="btn btn-info" filter="all">VIEW ALL</button>
+              </div>
+            </div>
+      </div>
     </section>
-    <!-- <header class="menu-bar bg-white">
-      <div class="container">
-        <div class="row pt-3 pb-3 ">
-          <div class="col-xl-2">
-            <i class="fas fa-cat fa-3x"></i>
+    <section id="pricing" class="bg-light py-5">
+        <div class="container mx-auto text-center">
+            <div class="row w-75 mx-auto my-5">
+              <div class="col-12">
+                  <h3>Pricing Plan</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium libero ipsam fugiat doloribus quibusdam beatae dolorum molestias veniam nulla.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="pricing-item">
+                  <div class="pricing-header"></div>
+                  <div class="pricing-body"></div>
+                </div>
+              </div>
+              <div class="col-4">
+                  <div class="pricing-item">
+                    <div class="pricing-header"></div>
+                    <div class="pricing-body"></div>
+                  </div>
+                </div>
+                <div class="col-4">
+                    <div class="pricing-item">
+                      <div class="pricing-header"></div>
+                      <div class="pricing-body"></div>
+                    </div>
+                  </div>
+            </div>
           </div>
-          <div class="col-xl-8 ml-auto align-self-center">
-            <ul class="nav justify-content-end">
-              <li class="nav-item ">
-                <a class="nav-link active" href="#"
-                  ><i class="fas fa-home"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contakt us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 text-center text-white">
-            <h1 class="display-3 mb-3">Web development project</h1>
-            <p class="mb-5">
-              Very suitable to support all web development projects
-            </p>
-
-            <button type="button" class="btn btn-lg btn-outline-info mr-3">
-              OUR SERVICES
-            </button>
-            <button type="button" class="btn btn-lg btn-outline-info">
-              HIRE IS NOW
-            </button>
-          </div>
-        </div>
-      </div>
-    </header> -->
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -281,6 +281,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
+    <script src="js/main.js"></script>
   </body>
 </html>
