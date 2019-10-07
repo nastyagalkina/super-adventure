@@ -5,11 +5,12 @@
   background-position: 0 100%;
   padding: 180px 0;
 }
-#services {
+#services,
+#blog {
   background-color: lightcyan;
 }
 
-.card:hover {
+#services .card:hover {
   background-color: aquamarine;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(184, 184, 184, 1);
   -moz-box-shadow: 0px 10px 20px 0px rgba(184, 184, 184, 1);
@@ -42,15 +43,96 @@ div[filter]:hover .text {
 }
 
 .pricing-header p,
-h3 {
+.pricing-header h3,
+footer p,
+footer h3 {
   color: #fff;
 }
 
 .pricing-body p {
+  border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.pricing-header p sup,
+.pricing-header p sub {
+  font-size: 1rem;
+}
+
+.pricing-item {
+  background-color: #fff;
 }
 
 .pricing-item:hover {
   -webkit-box-shadow: 0px 9px 16px 3px rgba(176, 176, 176, 1);
   -moz-box-shadow: 0px 9px 16px 3px rgba(176, 176, 176, 1);
   box-shadow: 0px 9px 16px 3px rgba(176, 176, 176, 1);
+}
+
+#carouselTeam .col-3 {
+  padding: 0;
+}
+
+#carouselTeam .card {
+  border: none;
+}
+
+#carouselTeam .fa-square {
+  color: rgb(235, 235, 235);
+}
+
+#carouselTeam .fa-inverse {
+  color: teal;
+}
+
+#carouselTeam .fa-inverse:hover {
+  color: white;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+}
+
+.carousel-indicators--round li {
+  border-radius: 10px;
+  margin: 1px 3px;
+  height: 10px;
+  max-width: 10px;
+  border: 1px solid teal;
+  background-color: teal;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color: royalblue;
+  border: 1px solid royalblue;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+#blog a {
+  text-decoration: none;
+  color: #000;
+}
+
+#blog a:hover {
+  color: teal;
+}
+
+footer {
+  background-image: url(../img/footer.png);
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+footer .fa-circle {
+  color: rgb(27, 69, 255);
+}
+footer h5 {
+  color: #fff;
 }
