@@ -5,6 +5,11 @@
   background-position: 0 100%;
   padding: 180px 0;
 }
+
+.tick span {
+  font-size: 2rem;
+}
+
 #services,
 #blog {
   background-color: lightcyan;
