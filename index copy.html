@@ -17,7 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
   </head>
   <body class="bg-white">
-    <audio src="audio/top_music.mp3" autoplay="autoplay"></audio>
+    <audio src="audio/top_music.mp3" autoplay="autoplay" autobuffer="autobuffer"></audio>
+    <audio id="audioRave" autoplay="autoplay" autobuffer="autobuffer">
+      <source src="audio/top_music.mp3" type="audio/mpeg">
+    </audio>    
     <button onclick="topFunction()" id="topButton" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <header id="navbar" class="bg-light">
       <div class="container">
@@ -766,6 +769,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="js/main copy.js"></script>
   </body>
 </html>
