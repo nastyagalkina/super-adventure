@@ -27,13 +27,16 @@
   padding: 180px 0;
 }
 #header .slideInLeft {
-  animation-duration: .6s;
-  animation-delay: .4s;
-
+  animation-duration: 0.6s;
+  animation-delay: 0.4s;
 }
-p,h1,h2,h5,h6 {
+p,
+h1,
+h2,
+h5,
+h6 {
   color: #f35626;
-  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,7 +44,7 @@ p,h1,h2,h5,h6 {
 }
 button {
   color: #f35626;
-  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,8 +52,8 @@ button {
 }
 
 .card-img-top {
-  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
-  animation: hue 5s infinite linear;
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
+  animation: hue 0.5s infinite linear;
 }
 
 #header .rotateIn {
@@ -59,17 +62,17 @@ button {
 
 @keyframes hue {
   0% {
-  filter: hue-rotate(0deg);
-}
+    filter: hue-rotate(0deg);
+  }
 
-100% {
-  filter: hue-rotate(-360deg);
-}
+  100% {
+    filter: hue-rotate(-360deg);
+  }
 }
 
 .site__title {
   color: #f35626;
-  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,32 +100,32 @@ button {
 }
 
 #serviceCard1 {
-  animation-duration: .6s;
-  animation-delay: .4s;
+  animation-duration: 0.6s;
+  animation-delay: 0.4s;
 }
 
 #serviceCard2 {
-  animation-duration: .6s;
-  animation-delay: .8s;
+  animation-duration: 0.6s;
+  animation-delay: 0.8s;
 }
 
 #serviceCard3 {
-  animation-duration: .6s;
+  animation-duration: 0.6s;
   animation-delay: 1.2s;
 }
 
 #serviceCard4 {
-  animation-duration: .6s;
+  animation-duration: 0.6s;
   animation-delay: 1.6s;
 }
 
 #serviceCard5 {
-  animation-duration: .6s;
+  animation-duration: 0.6s;
   animation-delay: 2s;
 }
 
 #serviceCard6 {
-  animation-duration: .6s;
+  animation-duration: 0.6s;
   animation-delay: 2.4s;
 }
 

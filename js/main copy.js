@@ -51,37 +51,42 @@ function topFunction() {
 
 new WOW().init();
 
-raveAudio = document.getElementById("audioRave"); //начальная громкость музыки
+raveAudio = document.getElementById("audioRave");
 raveAudio.volume = 0.0;
-
-document.onload = function setDistanceZero() {
-  globalThis.raveDistanceZero =
-    document.getElementById("team").getBoundingClientRect().top + //расстрояние от верха документа до рейва (расстояние от верха viewport до рейва + сдвиг от верха страницы)
-    window.pageYOffset;
-};
-
-console.log(raveDistanceZero);
 
 // raveDistance = document.getElementById("team").getBoundingClientRect().top; //расстояние до рейва в момент обновления (расстояние от верха viewport до рейва)
 
+function startTheRave() {
+  raveDistanceZero = (
+    document.getElementById("team").getBoundingClientRect().y + //расстрояние от верха документа до рейва (расстояние от верха viewport до рейва + сдвиг от верха страницы)
+    window.pageYOffset
+  ).toFixed(2);
+  console.log("RaveDZ :" + raveDistanceZero);
+}
+
+setTimeout(startTheRave, 2000);
+
 function changeAudioVolume() {
-  raveDistance = document.getElementById("team").getBoundingClientRect().top; //новое расстояние от верха viewport до рейва
+  raveDistance = document
+    .getElementById("team")
+    .getBoundingClientRect()
+    .top.toFixed(2); //новое расстояние от верха viewport до рейва
   relativeDistance = (raveDistance / raveDistanceZero).toFixed(2);
-  console.log(raveDistance + " " + relativeDistance);
+  console.log("RaveD: " + raveDistance + "; RelD: " + relativeDistance);
+  console.log(raveAudio.volume);
   if (relativeDistance > 1 && raveDistance > 1) {
     relativeDistance = 1;
   }
   if (relativeDistance > 0 && relativeDistance < 1) {
     raveAudio.volume = 1 - relativeDistance;
-  } else if (relativeDistance == 1) {
+  } else if (relativeDistance == 1.0) {
     raveAudio.volume = 0.0;
   } else if (relativeDistance == 0) {
     raveAudio.volume = 1.0;
-  } else if (relativeDistance > 1) {
-    raveAudio.volume = relativeDistance - 1;
+  } else if (relativeDistance < 0) {
+    raveAudio.volume = 1 - -relativeDistance;
   }
   raveDistance = document.getElementById("team").getBoundingClientRect().top; //новое расстояние до рейва
   relativeDistance = (raveDistance / raveDistanceZero).toFixed(2); //новое относительное расстояние
 }
-
 setInterval(changeAudioVolume, 125);
