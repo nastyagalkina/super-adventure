@@ -31,9 +31,49 @@
   animation-delay: .4s;
 
 }
+p,h1,h2,h5,h6 {
+  color: #f35626;
+  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 5s infinite linear;
+}
+button {
+  color: #f35626;
+  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 5s infinite linear;
+}
+
+.card-img-top {
+  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  animation: hue 5s infinite linear;
+}
 
 #header .rotateIn {
   animation-delay: 1.2s;
+}
+
+@keyframes hue {
+  0% {
+  filter: hue-rotate(0deg);
+}
+
+100% {
+  filter: hue-rotate(-360deg);
+}
+}
+
+.site__title {
+  color: #f35626;
+  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 5s infinite linear;
 }
 
 #timer {
