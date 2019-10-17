@@ -26,6 +26,13 @@
   background-position: 0 100%;
   padding: 180px 0;
 }
+#header .fadeInDown {
+  animation-delay: .4s;
+}
+
+#timer {
+  display: none;
+}
 
 .tick span {
   font-size: 2rem;
@@ -41,6 +48,36 @@
   -webkit-box-shadow: 0px 10px 20px 0px rgba(184, 184, 184, 1);
   -moz-box-shadow: 0px 10px 20px 0px rgba(184, 184, 184, 1);
   box-shadow: 0px 10px 20px 0px rgba(184, 184, 184, 1);
+}
+
+#serviceCard1 {
+  animation-duration: .6s;
+  animation-delay: .4s;
+}
+
+#serviceCard2 {
+  animation-duration: .6s;
+  animation-delay: .8s;
+}
+
+#serviceCard3 {
+  animation-duration: .6s;
+  animation-delay: 1.2s;
+}
+
+#serviceCard4 {
+  animation-duration: .6s;
+  animation-delay: 1.6s;
+}
+
+#serviceCard5 {
+  animation-duration: .6s;
+  animation-delay: 2s;
+}
+
+#serviceCard6 {
+  animation-duration: .6s;
+  animation-delay: 2.4s;
 }
 
 .text {
